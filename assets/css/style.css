@@ -1,8 +1,19 @@
 .navbar-nav {
   gap: 2rem;
 }
-.section-1 {
+.section-1,
+.section-2,
+.section-3 {
   height: calc(100vh - 60px);
+}
+.section-1 {
+  background-color: rgb(47, 47, 255);
+}
+.section-2 {
+  background-color: rgb(120, 120, 255);
+}
+.section-3 {
+  background-color: rgb(224, 224, 255);
 }
 @media screen and (max-width: 991px) {
   .navbar-nav {
