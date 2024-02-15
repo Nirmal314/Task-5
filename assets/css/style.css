@@ -6,7 +6,7 @@
 }
 .nav-item:hover {
   border-color: #4caf4f;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 .navbar-nav {
   gap: 2rem;
@@ -90,6 +90,9 @@
   z-index: 99;
 }
 
+.pellentesque {
+  font-size: 6vw;
+}
 /* ! overridden bs5 */
 
 .carousel-indicators [data-bs-target] {
@@ -121,9 +124,26 @@ i {
 }
 /* ! media quaries */
 
+@media screen and (max-width: 655px) {
+  .text-justify {
+    text-align: justify;
+  }
+  .btn-meet-all-customers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .pellentesque {
+    font-size: 25pt;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .navbar-nav {
     display: none;
+  }
+  .pellentesque {
+    font-size: 40pt;
   }
 }
 @media screen and (min-width: 1210px) {
