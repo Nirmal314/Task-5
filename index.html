@@ -4,75 +4,85 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ! custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <!-- ! bootstrap css -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- ! bootstrap js  -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
 
     <!-- ! bootstrap-icons css -->
     <link rel="stylesheet" href="assets/bootstrap/icons/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/bootstrap/icons/bootstrap-icons.min.css">
 
-    <!-- ! custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
     <title>Task 5</title>
 
     <!-- ! popperjs -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
-    <!-- ! bootstrap js  -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        crossorigin="anonymous"></script> -->
 </head>
 
 <body>
-    <div class="container-fluid p-0 min-vh-100" style="background-color: #F5F7FA;">
-        <nav class="navbar w-100 navbar-expand-lg navbar-light">
-            <div class="container-fluid d-flex justify-content-evenly">
-                <div>
-                    <button class="navbar-toggler me-3">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <img src="/assets/images/logo.png" alt="Logo">
-                    </a>
-                </div>
-                <div class="position-relative justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item px-2 py-0">
-                            <a class="nav-link text-dark" href="#">Home</a>
+    <div class="container-fluid p-0 min-vh-100 overflow-x-hidden" style="background-color: #F5F7FA;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid px-5 mobile-nav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/images/logo.png" alt="Logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav my-3 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link px-5 px-lg-2" href="#">Home</a>
                         </li>
-                        <li class="nav-item px-2 py-0">
-                            <a class="nav-link text-dark" href="#">Service</a>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 px-lg-2" href="#">Service</a>
                         </li>
-                        <li class="nav-item px-2 py-0">
-                            <a class="nav-link text-dark" href="#">Feature</a>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 px-lg-2" href="#">Feature</a>
                         </li>
-                        <li class="nav-item px-2 py-0">
-                            <a class="nav-link text-dark" href="#">Product</a>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 px-lg-2" href="#">Product</a>
                         </li>
-                        <li class="nav-item px-2 py-0">
-                            <a class="nav-link text-dark" href="#">Testimonial</a>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 px-lg-2" href="#">Testimonial</a>
                         </li>
-                        <li class="nav-item px-2 py-0">
-                            <a class="nav-link text-dark" href="#">FAQ</a>
+                        <li class="nav-item">
+                            <a class="nav-link px-5 px-lg-2" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item d-flex d-lg-none">
+                            <a class="nav-link px-5 px-lg-2" href="#">Login</a>
+                        </li>
+                        <li class="nav-item d-flex d-lg-none">
+                            <a class="nav-link px-5 px-lg-2" href="#">Sign Up</a>
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex">
-                    <button class="px-4 py-2 btn btn-outline-success me-3" type="button">Login</button>
-                    <button class="px-4 py-2 rounded-4 btn btn-success" type="button">Sign Up</button>
+                <div class="d-none align-items-center d-lg-flex">
+                    <button class="btn btn-outline-success me-3">Login</button>
+                    <button class="btn btn-success">Sign Up</button>
                 </div>
             </div>
         </nav>
 
+
+
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators" style="z-index: 100;">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -85,14 +95,15 @@
                     <div class="section-1 container-fluid">
                         <div class="d-flex h-100 align-items-center justify-content-evenly">
                             <div class="lessons-and-insights">
-                                <span style="font-size: 50pt;" class="m-0 fw-bolder text-dark">Lessons and
+                                <span style="font-size: 50pt;" class="lh-sm m-0 fw-bolder text-grey">Lessons and
                                     insights</span><br>
-                                <span style="font-size: 50pt;" class="m-0 fw-bolder text-success">from 8 years</span>
-                                <p class="fs-6 fw-medium text-muted">Where to grow your business as a
+                                <span style="font-size: 50pt;" class="lh-sm m-0 fw-bolder text-green">from 8
+                                    years</span>
+                                <p class="fs-6 fw-medium text-muted mb-4">Where to grow your business as a
                                     photographer:
                                     site or social media?</p>
                                 <div>
-                                    <button class="m-0 btn btn-success px-4 py-2">
+                                    <button class="m-0 btn btn-success px-5 py-2">
                                         <a class="text-light text-decoration-none" href="#">
                                             Register
                                         </a>
@@ -105,7 +116,7 @@
                             <div class="lessons-and-insights-overlay w-100">
                                 <span style="font-size: 8vw;" class="text-center m-0 fw-bolder text-light">Lessons and
                                     insights</span><br>
-                                <span style="font-size: 8vw;" class="m-0 fw-bolder text-success"><span></span>from 8
+                                <span style="font-size: 8vw;" class="m-0 fw-bolder text-green"><span></span>from 8
                                     years</span>
                                 <p style="font-size: small;" class="fw-medium text-light text-center">Where to grow your
                                     business as a
@@ -126,14 +137,15 @@
                     <div class="section-2 container-fluid">
                         <div class="d-flex h-100 align-items-center justify-content-evenly">
                             <div class="lessons-and-insights">
-                                <span style="font-size: 50pt;" class="m-0 fw-bolder text-dark">Lessons and
+                                <span style="font-size: 50pt;" class="lh-sm m-0 fw-bolder text-grey">Lessons and
                                     insights</span><br>
-                                <span style="font-size: 50pt;" class="m-0 fw-bolder text-success">from 8 years</span>
-                                <p class="fs-6 fw-medium text-muted">Where to grow your business as a
+                                <span style="font-size: 50pt;" class="lh-sm m-0 fw-bolder text-green">from 8
+                                    years</span>
+                                <p class="fs-6 fw-medium text-muted mb-4">Where to grow your business as a
                                     photographer:
                                     site or social media?</p>
                                 <div>
-                                    <button class="m-0 btn btn-success px-4 py-2">
+                                    <button class="m-0 btn btn-success px-5 py-2">
                                         <a class="text-light text-decoration-none" href="#">
                                             Register
                                         </a>
@@ -146,7 +158,7 @@
                             <div class="lessons-and-insights-overlay w-100">
                                 <span style="font-size: 8vw;" class="text-center m-0 fw-bolder text-light">Lessons and
                                     insights</span><br>
-                                <span style="font-size: 8vw;" class="m-0 fw-bolder text-success">from 8 years</span>
+                                <span style="font-size: 8vw;" class="m-0 fw-bolder text-green">from 8 years</span>
                                 <p style="font-size: small;" class="fw-medium text-light text-center">Where to grow your
                                     business as a
                                     photographer:
@@ -166,14 +178,15 @@
                     <div class="section-3 container-fluid">
                         <div class="d-flex h-100 align-items-center justify-content-evenly">
                             <div class="lessons-and-insights">
-                                <span style="font-size: 50pt;" class="m-0 fw-bolder text-dark">Lessons and
+                                <span style="font-size: 50pt;" class="lh-sm m-0 fw-bolder text-grey">Lessons and
                                     insights</span><br>
-                                <span style="font-size: 50pt;" class="m-0 fw-bolder text-success">from 8 years</span>
-                                <p class="fs-6 fw-medium text-muted">Where to grow your business as a
+                                <span style="font-size: 50pt;" class="lh-sm m-0 fw-bolder text-green">from 8
+                                    years</span>
+                                <p class="fs-6 fw-medium text-muted mb-4">Where to grow your business as a
                                     photographer:
                                     site or social media?</p>
                                 <div>
-                                    <button class="m-0 btn btn-success px-4 py-2">
+                                    <button class="m-0 btn btn-success px-5 py-2">
                                         <a class="text-light text-decoration-none" href="#">
                                             Register
                                         </a>
@@ -186,7 +199,7 @@
                             <div class="lessons-and-insights-overlay w-100">
                                 <span style="font-size: 8vw;" class="text-center m-0 fw-bolder text-light">Lessons and
                                     insights</span><br>
-                                <span style="font-size: 8vw;" class="m-0 fw-bolder text-success">from 8 years</span>
+                                <span style="font-size: 8vw;" class="m-0 fw-bolder text-green">from 8 years</span>
                                 <p style="font-size: small;" class="fw-medium text-light text-center">Where to grow your
                                     business as a
                                     photographer:
@@ -207,8 +220,8 @@
     </div>
 
     <div class="container-fluid p-0 min-vh-100" style="background-color: #fff;">
-        <div class="my-5 d-flex flex-column justify-content-center align-items-center">
-            <p class="h1 fw-bold text-center">Our Clients</p>
+        <div class="my-5 p-2 d-flex flex-column justify-content-center align-items-center">
+            <p class="h1 fw-bold text-center text-grey">Our Clients</p>
             <p class="text-center fs-5 text-muted">We have been working with some Fortune 500+ clients</p>
         </div>
         <div class="d-flex flex-wrap px-3 justify-content-evenly align-items-center">
@@ -221,8 +234,8 @@
             <img class="mx-3" src="/assets/images/c7.svg" alt="c7" />
         </div>
         <div class="my-5 d-flex flex-column justify-content-center align-items-center">
-            <div class="my-5">
-                <p class="h1 fw-bold text-center mb-3">Manage your entire community <br>in a single system</p>
+            <div class="my-5 p-3">
+                <p class="h1 fw-bold text-center mb-3 text-grey">Manage your entire community <br>in a single system</p>
                 <p class="text-center fs-5 text-muted">Who is Nextcent suitable for?</p>
             </div>
 
@@ -232,7 +245,7 @@
                         <div class="d-flex w-100 justify-content-center align-items-center">
                             <img src="assets/images/m1.svg" class="w-25" alt="m1" />
                         </div>
-                        <p class="h2 fw-bold text-center">Membership <br>Organisations</p>
+                        <p class="h2 fw-bold text-center text-grey">Membership <br>Organisations</p>
                         <p class="text-center text-muted">Our membership management <br> software provides full
                             automation of
                             <br>membership renewals
@@ -245,7 +258,7 @@
                         <div class="d-flex w-100 justify-content-center align-items-center">
                             <img src="assets/images/m2.svg" class="w-25" alt="m2" />
                         </div>
-                        <p class="h2 fw-bold text-center">National <br>Associations</p>
+                        <p class="h2 fw-bold text-center text-grey">National <br>Associations</p>
                         <p class="text-center text-muted">Our membership management <br> software provides full
                             automation of
                             <br>membership renewals
@@ -258,7 +271,7 @@
                         <div class="d-flex w-100 justify-content-center align-items-center">
                             <img src="assets/images/m3.svg" class="w-25" alt="m3" />
                         </div>
-                        <p class="h2 fw-bold text-center">Clubs And <br>Group</p>
+                        <p class="h2 fw-bold text-center text-grey">Clubs And <br>Group</p>
                         <p class="text-center text-muted">Our membership management <br> software provides full
                             automation of
                             <br>membership renewals
@@ -269,9 +282,9 @@
             </div>
 
             <div class="d-flex flex-wrap w-100 justify-content-evenly align-items-center">
-                <img src="assets/images/password_logo.png" alt="" />
+                <img class="w-60 img-mw" src="assets/images/password_logo.png" alt="" />
                 <div style="max-width: 700px;" class="px-md-4 px-sm-3 px-3">
-                    <p class="h1 fw-bold mb-3">The unseen of spending three years at Pixelgrade</p>
+                    <p class="h1 fw-bold mb-3 text-grey">The unseen of spending three years at Pixelgrade</p>
                     <p class="mb-3 text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                         sit amet
                         justo ipsum.
@@ -295,47 +308,48 @@
     <div class="container-fluid w-100 py-5 d-flex flex-wrap justify-content-evenly align-items-center"
         style="background-color: #F5F7FA;">
         <div class="w-fit">
-            <p class="h1 fw-bold mb-0">Helping a local</p>
-            <p class="h1 fw-bold mb-2 text-success">business reinvent itself</p>
-            <p class="h5">We reached here with our hard work and dedication</p>
+            <p class="text-lg-start text-center h1 fw-bold mb-0 text-grey">Helping a local</p>
+            <p class="text-lg-start text-center h1 fw-bold mb-2 text-green">business reinvent itself</p>
+            <p class="text-lg-start text-center h5 mb-5">We reached here with our hard work and dedication</p>
         </div>
-        <div class="container-lg m-0 w-fit">
+        <div class="m-0 w-fit">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="d-flex justify-content-center align-items-center py-3 px-5">
+                    <div class="business-count d-flex justify-content-center align-items-center py-3 px-5">
                         <img src="assets/images/b1.png" class="me-3" style="width: 50px; height: 50px;" alt="b1" />
                         <div>
-                            <p class="h3 fw-bold mb-0">2,245,341</p>
-                            <p class="text-muted">Members</p>
+                            <p class="h3 fw-bold mb-0 text-grey">2,245,341</p>
+                            <p class="text-muted text-nowrap">Members</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="d-flex justify-content-center align-items-center py-3 px-5">
-                        <img src="assets/images/b2.png" class="me-3" style="width: 50px; height: 50px;" alt="b2" />
+                    <div
+                        class="business-count b2-justify-center d-flex justify-content-center align-items-center py-3 px-5">
+                        <img src="assets/images/b2.png" class="me-3" style="width: 60px; height: 60px;" alt="b2" />
                         <div>
-                            <p class="h3 fw-bold mb-0">2,245,341</p>
-                            <p class="text-muted">Members</p>
+                            <p class="h3 fw-bold mb-0 text-grey">46,328</p>
+                            <p class="text-muted text-nowrap">Clubs</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="d-flex justify-content-center align-items-center py-3 px-5">
+                    <div class="business-count d-flex justify-content-center align-items-center py-3 px-5">
                         <img src="assets/images/b3.png" class="me-3" style="width: 50px; height: 50px;" alt="b3" />
                         <div>
-                            <p class="h3 fw-bold mb-0">2,245,341</p>
-                            <p class="text-muted">Members</p>
+                            <p class="h3 fw-bold mb-0 text-grey">828,867</p>
+                            <p class="text-muted text-nowrap">Event Bookings</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="d-flex justify-content-center align-items-center py-3 px-5">
+                    <div class="business-count d-flex justify-content-center align-items-center py-3 px-5">
                         <img src="assets/images/b4.png" class="me-3" style="width: 50px; height: 50px;" alt="b4" />
                         <div>
-                            <p class="h3 fw-bold mb-0">2,245,341</p>
-                            <p class="text-muted">Members</p>
+                            <p class="h3 fw-bold mb-0 text-grey">1,926,436</p>
+                            <p class="text-muted text-nowrap">Payments</p>
                         </div>
                     </div>
                 </div>
@@ -343,9 +357,9 @@
         </div>
     </div>
     <div class="d-flex flex-wrap w-100 justify-content-evenly my-5 align-items-center">
-        <img src="assets/images/unlock_logo.png" alt="" />
+        <img class="w-60 img-mw" src="assets/images/unlock_logo.png" alt="" />
         <div style="max-width: 700px;" class="px-md-4 px-sm-3 px-3">
-            <p class="h1 fw-bold mb-3">How to design your site footer like we did</p>
+            <p class="h1 fw-bold mb-3 text-grey">How to design your site footer like we did</p>
             <p class="mb-3 text-muted text-justify">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
                 augue nec
                 tincidunt
@@ -365,10 +379,10 @@
             </button>
         </div>
     </div>
-    <div class="d-flex flex-wrap w-100 justify-content-evenly p-2 my-5 align-items-center"
+    <div class="d-flex flex-wrap w-100 justify-content-evenly p-3 my-5 align-items-center"
         style="background-color: #F5F7FA;">
         <img src="assets/images/tesla.png" class="img-fluid" alt="" />
-        <div style="max-width: 700px;" class="px-md-4 px-sm-3 px-3">
+        <div style="max-width: 850px;" class="px-md-4 px-sm-3 px-3">
             <p class="mb-3 text-muted text-justify">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
                 lobortis sem
                 dui,
@@ -385,7 +399,7 @@
                 nibh
                 id sem dignissim finibus ac sit amet magna.
             </p>
-            <p class="h4 fw-bold text-success">Tim Smith</p>
+            <p class="h4 fw-bold text-green">Tim Smith</p>
             <p class="fw-semibold text-muted">British Dragon Boat Racing Association</p>
             <div class="d-flex flex-wrap justify-content-between align-items-center">
                 <img class="mx-2" src="/assets/images/c1_purple.png" alt="c1" />
@@ -394,7 +408,7 @@
                 <img class="mx-2" src="/assets/images/c4.svg" alt="c4" />
                 <img class="mx-2" src="/assets/images/c5.svg" alt="c5" />
                 <img class="mx-2" src="/assets/images/c6.svg" alt="c6" />
-                <a href="#" class="text-decoration-none h5 fw-bold text-success btn-meet-all-customers">
+                <a href="#" class="text-decoration-none h5 fw-bold text-green btn-meet-all-customers">
                     <span class="me-2">
                         Meet all customers
                     </span>
@@ -404,9 +418,9 @@
         </div>
     </div>
 
-    <div style="margin-bottom: 175px;" class="mt-4 d-flex flex-column justify-content-center align-items-center">
+    <div class="mb-marketing mt-4 d-flex flex-column justify-content-center align-items-center">
         <div style="max-width: 700px;" class="px-md-4 px-sm-3 px-3 mt-3">
-            <p class="h1 fw-bold text-center mb-3">Caring is the new marketing</p>
+            <p class="h1 fw-bold text-center mb-3 text-grey">Caring is the new marketing</p>
             <p class="text-center fs-5 text-muted text-justify">The Nexcent blog is the best place to read about the
                 latest
                 membership insights, trends and more. See who's joining the community, read about how our community
@@ -419,15 +433,19 @@
             <div class="card my-5 mx-3 border-0">
                 <div class="card-body p-0">
                     <div class="position-relative">
-                        <img src="assets/images/ci1.png" class="w-100 img-fluid" alt="m1" />
+                        <div class="w-100 h-100 overflow-hidden" style="border-radius: 10px;">
+                            <img src="assets/images/ci1.png" class="w-100 h-100 m1-img img-fluid" alt="m1" />
+                        </div>
                         <div class="marketing-card p-4 d-flex justify-content-center align-items-center flex-column">
-                            <p class="h5 text-muted mb-4 text-center fw-medium">Creating Streamlined Safeguarding
+                            <p class="h5 overlay-card text-muted mb-4 text-center fw-medium">Creating Streamlined
+                                Safeguarding
                                 Processes with
                                 OneRen</p>
 
                             <a href="#" class="text-decoration-none">
-                                <p class="h5 text-success fw-bold"><span class="me-2">Readmore</span> <span><img
-                                            src="assets/images/right-arrow.svg" alt="" /></span></p>
+                                <p class="h5 overlay-card text-green fw-bold"><span class="me-2">Readmore</span>
+                                    <span><img src="assets/images/right-arrow.svg" alt="" /></span>
+                                </p>
                             </a>
                         </div>
                     </div>
@@ -436,16 +454,21 @@
             <div class="card my-5 mx-3 border-0">
                 <div class="card-body p-0">
                     <div class="position-relative">
-                        <img src="assets/images/ci2.png" class="w-100 img-fluid" alt="m2" />
+                        <div class="w-100 h-100 overflow-hidden" style="border-radius: 10px;">
+                            <img src="assets/images/ci2.png" class="w-100 h-100 m2-img img-fluid" alt="m2" />
+                        </div>
                         <div class="marketing-card p-4 d-flex justify-content-center align-items-center flex-column">
-                            <p class="h5 text-muted mb-4 text-center fw-medium">What are your safeguarding <br>
+                            <p class="h5 overlay-card text-muted mb-4 text-center fw-medium">What are your safeguarding
+                                <br>
                                 responsibilities and
                                 how can <br> you
                                 manage
-                                them?</p>
+                                them?
+                            </p>
                             <a href="#" class="text-decoration-none">
-                                <p class="h5 text-success fw-bold"><span class="me-2">Readmore</span> <span><img
-                                            src="assets/images/right-arrow.svg" alt="" /></span></p>
+                                <p class="h5 overlay-card text-green fw-bold"><span class="me-2">Readmore</span>
+                                    <span><img src="assets/images/right-arrow.svg" alt="" /></span>
+                                </p>
                             </a>
                         </div>
                     </div>
@@ -454,14 +477,19 @@
             <div class="card my-5 mx-3 border-0">
                 <div class="card-body p-0">
                     <div class="position-relative">
-                        <img src="assets/images/ci3.png" class="w-100 img-fluid" alt="m3" />
+                        <div class="w-100 h-100 overflow-hidden" style="border-radius: 10px;">
+                            <img src="assets/images/ci3.png" class="w-100 h-100 m3-img img-fluid" alt="m3" />
+                        </div>
                         <div class="marketing-card p-4 d-flex justify-content-center align-items-center flex-column">
-                            <p class="text-muted mb-4 text-center fw-medium">Revamping the Membership <br> Model with
+                            <p class="h5 overlay-card text-muted mb-4 text-center fw-medium">Revamping the Membership
+                                <br> Model with
                                 Triathlon <br>
-                                Australia</p>
+                                Australia
+                            </p>
                             <a href="#" class="text-decoration-none">
-                                <p class="h5 text-success fw-bold"><span class="me-2">Readmore</span> <span><img
-                                            src="assets/images/right-arrow.svg" alt="" /></span></p>
+                                <p class="h5 overlay-card text-green fw-bold"><span class="me-2">Readmore</span>
+                                    <span><img src="assets/images/right-arrow.svg" alt="" /></span>
+                                </p>
                             </a>
                         </div>
                     </div>
@@ -472,7 +500,7 @@
 
     <div class="d-flex py-5 flex-column mt-5 w-100 justify-content-center align-items-center"
         style="background-color: #F5F7FA;">
-        <p class="pellentesque fw-bold text-center lh-sm">
+        <p class="pellentesque fw-bold text-center text-grey lh-sm">
             Pellentesque suscipit <br> fringilla libero eu.
         </p>
 
@@ -491,31 +519,32 @@
     <footer style="background-color: #263238;" class="text-center py-5 text-lg-start text-light">
         <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <img class="mb-5" src="assets/images/logo-white.png" alt="Logo" />
+                <div
+                    class="col-lg-4 col-sm-10 mx-auto mb-4 d-flex flex-column align-items-center align-items-lg-start justify-content-lg-start justify-content-center">
+                    <img class=" mb-5" src="assets/images/logo-white.png" alt="Logo" />
                     <p class="mb-2">
                         Copyright © 2020 Nexcent ltd.
                     </p>
                     <p class="mb-4">
                         All rights reserved
                     </p>
-                    <ul class="d-flex py-2 list-unstyled">
-                        <li class="rounded-full me-4 p-2 bg-nav-icon">
+                    <ul class="d-flex justify-content-between justify-content-lg-center py-2 list-unstyled">
+                        <li class="rounded-full insta-margin p-2 bg-nav-icon">
                             <a href="#" class="text-decoration-none text-light">
                                 <i class="bi bi-instagram"></i>
                             </a>
                         </li>
-                        <li class="rounded-full me-4 p-2 bg-nav-icon">
+                        <li class="rounded-full mx-3 p-2 bg-nav-icon">
                             <a href="#" class="text-decoration-none text-light">
                                 <i class="bi bi-threads"></i>
                             </a>
                         </li>
-                        <li class="rounded-full me-4 p-2 bg-nav-icon">
+                        <li class="rounded-full mx-3 p-2 bg-nav-icon">
                             <a href="#" class="text-decoration-none text-light">
                                 <i class="bi bi-twitter"></i>
                             </a>
                         </li>
-                        <li class="rounded-full me-4 p-2 bg-nav-icon">
+                        <li class="rounded-full mx-3 p-2 bg-nav-icon">
                             <a href="#" class="text-decoration-none text-light">
                                 <i class="bi bi-youtube"></i>
                             </a>
@@ -523,53 +552,54 @@
                     </ul>
                 </div>
 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-lg-2 col-sm-3 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">
                         Company
                     </h5>
                     <ul class="list-unstyled">
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">About us</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">About us</a>
                         </li>
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Blog</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Blog</a>
                         </li>
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Contact us</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Contact us</a>
                         </li>
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Pricing</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Pricing</a>
                         </li>
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Testimonials</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Testimonials</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-lg-2 col-sm-3 mx-auto mb-4">
                     <h5 class="text-uppercase fw-bold mb-4">
                         Support
                     </h5>
                     <ul class="list-unstyled">
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Help center</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Help center</a>
                         </li>
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Terms of service</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Terms of service</a>
                         </li>
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Legal</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Legal</a>
                         </li>
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Privacy policy</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Privacy policy</a>
                         </li>
                         <li class="mb-3">
-                            <a href="#!" class="text-reset text-decoration-none">Status</a>
+                            <a href="#!" class="text-reset text-decoration-none text-nowrap">Status</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <div
+                    class="col-lg-3 col-sm-8 mx-auto mb-md-0 mb-4 d-flex flex-column align-items-center align-items-lg-start justify-content-lg-start justify-content-center">
                     <h5 class="text-uppercase fw-bold mb-4">
                         Stay up to date
                     </h5>
